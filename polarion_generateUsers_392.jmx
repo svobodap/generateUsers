@@ -18,6 +18,16 @@
             <stringProp name="Argument.value">1</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="host" elementType="Argument">
+            <stringProp name="Argument.name">host</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="port" elementType="Argument">
+            <stringProp name="Argument.name">port</stringProp>
+            <stringProp name="Argument.value">80</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -69,161 +79,161 @@
           <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
             <collectionProp name="AuthManager.auth_list">
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/login/proxy</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/login/proxy</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/login/redirector</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/login/redirector</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/j_security_check</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/j_security_check</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/ria/prefetch.jsp</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/ria/prefetch.jsp</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/PortalDataService</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/gwt/com.polarion.UI/PortalDataService</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/wiki/bin/view/project/MyPolarion/page/Home</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/wiki/bin/view/project/MyPolarion/page/Home</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.WIKI/PortalDataService</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/gwt/com.polarion.WIKI/PortalDataService</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/ProjectsDataService</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/gwt/com.polarion.UI/ProjectsDataService</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/UserDataService</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/gwt/com.polarion.UI/UserDataService</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/WorkItemDataService</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/gwt/com.polarion.UI/WorkItemDataService</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/logout.jsp</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/logout.jsp</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/?logout=true</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/?logout=true</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/wiki/bin/view/page/Home</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/wiki/bin/view/page/Home</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/wiki/bin/view/page/_users/test3</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/wiki/bin/view/page/_users/test3</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/wiki/bin/workitemsmacroaction/page/_users/test3?xpage=showstring&amp;sortby=%7EplannedStart+priority+severity&amp;top=20&amp;fields=id%2Ctitle%2Cpriority%2Cproject&amp;group=%2F&amp;query=approvals%3Afullxxxwaitingxxxtest3</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/wiki/bin/workitemsmacroaction/page/_users/test3?xpage=showstring&amp;sortby=%7EplannedStart+priority+severity&amp;top=20&amp;fields=id%2Ctitle%2Cpriority%2Cproject&amp;group=%2F&amp;query=approvals%3Afullxxxwaitingxxxtest3</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/wiki/bin/workitemsmacroaction/page/_users/test3?xpage=showstring&amp;sortby=%7EplannedStart+priority+severity&amp;top=20&amp;fields=id%2Ctitle%2Cpriority%2Cproject&amp;group=%2F&amp;query=assignee.id%3Atest3+AND+suspect%3Atrue</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/wiki/bin/workitemsmacroaction/page/_users/test3?xpage=showstring&amp;sortby=%7EplannedStart+priority+severity&amp;top=20&amp;fields=id%2Ctitle%2Cpriority%2Cproject&amp;group=%2F&amp;query=assignee.id%3Atest3+AND+suspect%3Atrue</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/wiki/bin/workitemsmacroaction/page/_users/test3?xpage=showstring&amp;sortby=severity&amp;top=10&amp;fields=id%2Ctitle%2Cseverity+as+image%2Dtext%2Cproject&amp;group=%2F&amp;query=assignee.id%3Atest3+AND+type%3A%28task+OR+defect%29+AND+NOT+HAS%5FVALUE%3Aresolution</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/wiki/bin/workitemsmacroaction/page/_users/test3?xpage=showstring&amp;sortby=severity&amp;top=10&amp;fields=id%2Ctitle%2Cseverity+as+image%2Dtext%2Cproject&amp;group=%2F&amp;query=assignee.id%3Atest3+AND+type%3A%28task+OR+defect%29+AND+NOT+HAS%5FVALUE%3Aresolution</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.WIKI/ActivityDataService</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/gwt/com.polarion.WIKI/ActivityDataService</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/wiki/bin/view/project/MyPolarion/page/_users/admin</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/wiki/bin/view/project/MyPolarion/page/_users/admin</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/wiki/bin/workitemsmacroaction/project/MyPolarion/page/_users/admin?xpage=showstring&amp;sortby=%7EplannedStart+priority+severity&amp;top=20&amp;fields=id%2Ctitle%2Cpriority%2Cproject&amp;group=%2F&amp;query=assignee.id%3Aadmin+AND+suspect%3Atrue</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/wiki/bin/workitemsmacroaction/project/MyPolarion/page/_users/admin?xpage=showstring&amp;sortby=%7EplannedStart+priority+severity&amp;top=20&amp;fields=id%2Ctitle%2Cpriority%2Cproject&amp;group=%2F&amp;query=assignee.id%3Aadmin+AND+suspect%3Atrue</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/wiki/bin/workitemsmacroaction/project/MyPolarion/page/_users/admin?xpage=showstring&amp;sortby=severity&amp;top=10&amp;fields=id%2Ctitle%2Cseverity+as+image%2Dtext%2Cproject&amp;group=%2F&amp;query=assignee.id%3Aadmin+AND+type%3A%28task+OR+defect%29+AND+NOT+HAS%5FVALUE%3Aresolution</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/wiki/bin/workitemsmacroaction/project/MyPolarion/page/_users/admin?xpage=showstring&amp;sortby=severity&amp;top=10&amp;fields=id%2Ctitle%2Cseverity+as+image%2Dtext%2Cproject&amp;group=%2F&amp;query=assignee.id%3Aadmin+AND+type%3A%28task+OR+defect%29+AND+NOT+HAS%5FVALUE%3Aresolution</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
                 <stringProp name="Authorization.realm"></stringProp>
               </elementProp>
               <elementProp name="" elementType="Authorization">
-                <stringProp name="Authorization.url">http://qa-debian7.labs.polarion.com/polarion/wiki/bin/workitemsmacroaction/project/MyPolarion/page/_users/admin?xpage=showstring&amp;sortby=%7EplannedStart+priority+severity&amp;top=20&amp;fields=id%2Ctitle%2Cpriority%2Cproject&amp;group=%2F&amp;query=approvals%3Afullxxxwaitingxxxadmin</stringProp>
+                <stringProp name="Authorization.url">http://${host}:${port}/polarion/wiki/bin/workitemsmacroaction/project/MyPolarion/page/_users/admin?xpage=showstring&amp;sortby=%7EplannedStart+priority+severity&amp;top=20&amp;fields=id%2Ctitle%2Cpriority%2Cproject&amp;group=%2F&amp;query=approvals%3Afullxxxwaitingxxxadmin</stringProp>
                 <stringProp name="Authorization.username">admin</stringProp>
                 <stringProp name="Authorization.password">admin</stringProp>
                 <stringProp name="Authorization.domain"></stringProp>
@@ -243,7 +253,7 @@
                   <elementProp name="org.apache.jetspeed.login.destination" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">org.apache.jetspeed.login.destination</stringProp>
-                    <stringProp name="Argument.value">http%3A%2F%2Fqa-debian7.labs.polarion.com%2Fpolarion%2F</stringProp>
+                    <stringProp name="Argument.value">http%3A%2F%2F${host}:${port}%2Fpolarion%2F</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -277,7 +287,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -298,7 +308,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/?logout=true</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/?logout=true</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -343,7 +353,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -364,7 +374,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/login/redirector</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/login/redirector</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -396,12 +406,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|4|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|getInitData|1|2|3|4|0|</stringProp>
+                    <stringProp name="Argument.value">7|0|4|http://${host}:${port}/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|getInitData|1|2|3|4|0|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -421,7 +431,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -433,7 +443,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -473,12 +483,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|10|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|requestPortalSite|com.polarion.portal.shared.navigation.PortalSiteContext/4206597130|java.lang.String/2004016611|projects|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion|home|1|2|3|4|3|5|6|6|5|0|0|7|0|8|0|9|0|10|0|</stringProp>
+                    <stringProp name="Argument.value">7|0|10|http://${host}:${port}/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|requestPortalSite|com.polarion.portal.shared.navigation.PortalSiteContext/4206597130|java.lang.String/2004016611|projects|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion|home|1|2|3|4|3|5|6|6|5|0|0|7|0|8|0|9|0|10|0|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -498,7 +508,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -510,7 +520,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -550,12 +560,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|4|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|getRecentlyVisitedAndFavourites|1|2|3|4|0|</stringProp>
+                    <stringProp name="Argument.value">7|0|4|http://${host}:${port}/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|getRecentlyVisitedAndFavourites|1|2|3|4|0|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -575,7 +585,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -587,7 +597,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -627,12 +637,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|7|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|getShortcutsData|com.polarion.portal.shared.navigation.IScope|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion|1|2|3|4|1|5|6|0|7|</stringProp>
+                    <stringProp name="Argument.value">7|0|7|http://${host}:${port}/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|getShortcutsData|com.polarion.portal.shared.navigation.IScope|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion|1|2|3|4|1|5|6|0|7|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -652,7 +662,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -664,7 +674,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -702,7 +712,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -722,7 +732,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/759499CA4D3E33C95F1190B98B147E89.cache.html</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/759499CA4D3E33C95F1190B98B147E89.cache.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -750,12 +760,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|4|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.WIKI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|getInitData|1|2|3|4|0|</stringProp>
+                    <stringProp name="Argument.value">7|0|4|http://${host}:${port}/polarion/gwt/com.polarion.WIKI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|getInitData|1|2|3|4|0|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -775,7 +785,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/wiki/bin/view/project/MyPolarion/page/Home</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/wiki/bin/view/project/MyPolarion/page/Home</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -787,7 +797,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.WIKI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.WIKI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -833,12 +843,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|9|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|requestPortalSite|com.polarion.portal.shared.navigation.PortalSiteContext/4206597130|java.lang.String/2004016611|administration|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion|1|2|3|4|3|5|6|6|5|0|0|7|0|8|0|9|0|0|0|</stringProp>
+                    <stringProp name="Argument.value">7|0|9|http://${host}:${port}/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|requestPortalSite|com.polarion.portal.shared.navigation.PortalSiteContext/4206597130|java.lang.String/2004016611|administration|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion|1|2|3|4|3|5|6|6|5|0|0|7|0|8|0|9|0|0|0|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -858,7 +868,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -870,7 +880,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -910,12 +920,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|6|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|C3DFA6C7F4FBEF1BF3ED14BFE8A5B2B4|com.polarion.alm.ui.client.projects.ProjectsDataService|getProject|java.lang.String/2004016611|MyPolarion|1|2|3|4|1|5|6|</stringProp>
+                    <stringProp name="Argument.value">7|0|6|http://${host}:${port}/polarion/gwt/com.polarion.UI/|C3DFA6C7F4FBEF1BF3ED14BFE8A5B2B4|com.polarion.alm.ui.client.projects.ProjectsDataService|getProject|java.lang.String/2004016611|MyPolarion|1|2|3|4|1|5|6|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -935,7 +945,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -947,7 +957,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -987,12 +997,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|4|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|getRecentlyVisitedAndFavourites|1|2|3|4|0|</stringProp>
+                    <stringProp name="Argument.value">7|0|4|http://${host}:${port}/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|getRecentlyVisitedAndFavourites|1|2|3|4|0|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1012,7 +1022,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1024,7 +1034,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -1064,12 +1074,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|9|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|saveUICustomizationData|java.util.LinkedHashMap/3008245022|java.lang.String/2004016611|lastUrl|com.polarion.alm.ui.shared.customization.CustomizationValueString/1062760615|/project/MyPolarion/administration/project_administration|1|2|3|4|1|5|5|0|1|6|7|8|9|</stringProp>
+                    <stringProp name="Argument.value">7|0|9|http://${host}:${port}/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|saveUICustomizationData|java.util.LinkedHashMap/3008245022|java.lang.String/2004016611|lastUrl|com.polarion.alm.ui.shared.customization.CustomizationValueString/1062760615|/project/MyPolarion/administration/project_administration|1|2|3|4|1|5|5|0|1|6|7|8|9|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1089,7 +1099,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1101,7 +1111,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -1141,12 +1151,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|10|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|saveUICustomizationData|java.util.LinkedHashMap/3008245022|java.lang.String/2004016611|shortcut_tree_open_state|com.polarion.alm.ui.shared.customization.CustomizationValueListOfString/3742565625|java.util.ArrayList/4159755760|favorites_shortcuts|1|2|3|4|1|5|5|0|1|6|7|8|9|1|6|10|</stringProp>
+                    <stringProp name="Argument.value">7|0|10|http://${host}:${port}/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|saveUICustomizationData|java.util.LinkedHashMap/3008245022|java.lang.String/2004016611|shortcut_tree_open_state|com.polarion.alm.ui.shared.customization.CustomizationValueListOfString/3742565625|java.util.ArrayList/4159755760|favorites_shortcuts|1|2|3|4|1|5|5|0|1|6|7|8|9|1|6|10|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1166,7 +1176,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1178,7 +1188,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -1218,12 +1228,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|19|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|42F539C3B1D4A1B7B8A723AE0846A406|com.polarion.alm.ui.client.model.UserDataService|getUsers|com.polarion.portal.shared.navigation.IScope|java.lang.String/2004016611|java.util.ArrayList/4159755760|I|Z|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion||~id|id|name|email|description|roles|time-splitAssignments|1|2|3|4|6|5|6|6|7|8|9|10|0|11|12|13|7|6|6|14|6|15|6|16|6|17|6|18|6|19|12|1|</stringProp>
+                    <stringProp name="Argument.value">7|0|19|http://${host}:${port}/polarion/gwt/com.polarion.UI/|42F539C3B1D4A1B7B8A723AE0846A406|com.polarion.alm.ui.client.model.UserDataService|getUsers|com.polarion.portal.shared.navigation.IScope|java.lang.String/2004016611|java.util.ArrayList/4159755760|I|Z|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion||~id|id|name|email|description|roles|time-splitAssignments|1|2|3|4|6|5|6|6|7|8|9|10|0|11|12|13|7|6|6|14|6|15|6|16|6|17|6|18|6|19|12|1|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1243,7 +1253,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1255,7 +1265,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -1295,12 +1305,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|4|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|getRecentlyVisitedAndFavourites|1|2|3|4|0|</stringProp>
+                    <stringProp name="Argument.value">7|0|4|http://${host}:${port}/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|getRecentlyVisitedAndFavourites|1|2|3|4|0|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1320,7 +1330,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1332,7 +1342,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -1372,12 +1382,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|19|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|42F539C3B1D4A1B7B8A723AE0846A406|com.polarion.alm.ui.client.model.UserDataService|getUsers|com.polarion.portal.shared.navigation.IScope|java.lang.String/2004016611|java.util.ArrayList/4159755760|I|Z|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion||~id|id|name|email|description|roles|time-splitAssignments|1|2|3|4|6|5|6|6|7|8|9|10|0|11|12|13|7|6|6|14|6|15|6|16|6|17|6|18|6|19|12|1|</stringProp>
+                    <stringProp name="Argument.value">7|0|19|http://${host}:${port}/polarion/gwt/com.polarion.UI/|42F539C3B1D4A1B7B8A723AE0846A406|com.polarion.alm.ui.client.model.UserDataService|getUsers|com.polarion.portal.shared.navigation.IScope|java.lang.String/2004016611|java.util.ArrayList/4159755760|I|Z|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion||~id|id|name|email|description|roles|time-splitAssignments|1|2|3|4|6|5|6|6|7|8|9|10|0|11|12|13|7|6|6|14|6|15|6|16|6|17|6|18|6|19|12|1|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1397,7 +1407,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1409,7 +1419,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -1449,12 +1459,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|9|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|7601B8C68D270BE7565A2A99CDA794AA|com.polarion.alm.ui.client.tracker.WorkItemDataService|getAvailableColumnsAndConfigurations|java.lang.String/2004016611|com.polarion.portal.shared.navigation.IScope|User|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion|1|2|3|4|2|5|6|7|8|0|9|</stringProp>
+                    <stringProp name="Argument.value">7|0|9|http://${host}:${port}/polarion/gwt/com.polarion.UI/|7601B8C68D270BE7565A2A99CDA794AA|com.polarion.alm.ui.client.tracker.WorkItemDataService|getAvailableColumnsAndConfigurations|java.lang.String/2004016611|com.polarion.portal.shared.navigation.IScope|User|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion|1|2|3|4|2|5|6|7|8|0|9|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1474,7 +1484,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1486,7 +1496,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -1526,12 +1536,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|19|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|42F539C3B1D4A1B7B8A723AE0846A406|com.polarion.alm.ui.client.model.UserDataService|getUsers|com.polarion.portal.shared.navigation.IScope|java.lang.String/2004016611|java.util.ArrayList/4159755760|I|Z|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion||~id|id|name|email|description|roles|time-splitAssignments|1|2|3|4|6|5|6|6|7|8|9|10|0|11|12|13|7|6|6|14|6|15|6|16|6|17|6|18|6|19|20|1|</stringProp>
+                    <stringProp name="Argument.value">7|0|19|http://${host}:${port}/polarion/gwt/com.polarion.UI/|42F539C3B1D4A1B7B8A723AE0846A406|com.polarion.alm.ui.client.model.UserDataService|getUsers|com.polarion.portal.shared.navigation.IScope|java.lang.String/2004016611|java.util.ArrayList/4159755760|I|Z|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion||~id|id|name|email|description|roles|time-splitAssignments|1|2|3|4|6|5|6|6|7|8|9|10|0|11|12|13|7|6|6|14|6|15|6|16|6|17|6|18|6|19|20|1|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1551,7 +1561,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1563,7 +1573,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -1603,12 +1613,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|11|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|42F539C3B1D4A1B7B8A723AE0846A406|com.polarion.alm.ui.client.model.UserDataService|loadUser|java.lang.String/2004016611|com.polarion.portal.shared.navigation.IScope|java.util.ArrayList/4159755760|Z|subterra:data-service:objects:/default/${User}admin|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion|1|2|3|4|5|5|6|7|8|8|9|10|0|11|0|0|1|</stringProp>
+                    <stringProp name="Argument.value">7|0|11|http://${host}:${port}/polarion/gwt/com.polarion.UI/|42F539C3B1D4A1B7B8A723AE0846A406|com.polarion.alm.ui.client.model.UserDataService|loadUser|java.lang.String/2004016611|com.polarion.portal.shared.navigation.IScope|java.util.ArrayList/4159755760|Z|subterra:data-service:objects:/default/${User}admin|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion|1|2|3|4|5|5|6|7|8|8|9|10|0|11|0|0|1|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1628,7 +1638,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1640,7 +1650,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -1680,12 +1690,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|9|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|saveUICustomizationData|java.util.LinkedHashMap/3008245022|java.lang.String/2004016611|lastUrl|com.polarion.alm.ui.shared.customization.CustomizationValueString/1062760615|/project/MyPolarion/administration/user_management/users|1|2|3|4|1|5|5|0|1|6|7|8|9|</stringProp>
+                    <stringProp name="Argument.value">7|0|9|http://${host}:${port}/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|saveUICustomizationData|java.util.LinkedHashMap/3008245022|java.lang.String/2004016611|lastUrl|com.polarion.alm.ui.shared.customization.CustomizationValueString/1062760615|/project/MyPolarion/administration/user_management/users|1|2|3|4|1|5|5|0|1|6|7|8|9|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1705,7 +1715,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1717,7 +1727,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -1763,12 +1773,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|7|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|42F539C3B1D4A1B7B8A723AE0846A406|com.polarion.alm.ui.client.model.UserDataService|getTemplate|com.polarion.portal.shared.navigation.IScope|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion|1|2|3|4|1|5|6|0|7|</stringProp>
+                    <stringProp name="Argument.value">7|0|7|http://${host}:${port}/polarion/gwt/com.polarion.UI/|42F539C3B1D4A1B7B8A723AE0846A406|com.polarion.alm.ui.client.model.UserDataService|getTemplate|com.polarion.portal.shared.navigation.IScope|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion|1|2|3|4|1|5|6|0|7|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1788,7 +1798,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1800,7 +1810,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -1840,12 +1850,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|25|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|42F539C3B1D4A1B7B8A723AE0846A406|com.polarion.alm.ui.client.model.UserDataService|saveUser|com.polarion.portal.shared.JSUser/2295846898|com.polarion.portal.shared.navigation.IScope|java.util.LinkedHashMap/3008245022|java.lang.String/2004016611|name|com.polarion.portal.shared.JSUIObject$StringWrapper/3741875860|test${userCounter}|id|newPassword|newPassword2|globalRoles|com.polarion.portal.shared.JSUIObject$ArrayListWrapper/4183033412|java.util.ArrayList/4159755760|com.polarion.portal.shared.JSRole/3884851580|admin|projectRoles|project_user|time-splitAssignments|com.polarion.alm.projects.web.shared.JSPercentualAssignment/3060827767|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion|1|2|3|4|2|5|6|5|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|7|0|7|8|9|10|11|8|12|10|11|8|13|10|11|8|14|10|11|8|15|16|17|1|18|1|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|19|7|0|1|-5|10|19|8|20|16|17|1|18|1|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|21|7|0|1|-5|10|21|8|22|16|17|1|23|0|-1|-1|0|0|1|1|0|24|0|25|</stringProp>
+                    <stringProp name="Argument.value">7|0|25|http://${host}:${port}/polarion/gwt/com.polarion.UI/|42F539C3B1D4A1B7B8A723AE0846A406|com.polarion.alm.ui.client.model.UserDataService|saveUser|com.polarion.portal.shared.JSUser/2295846898|com.polarion.portal.shared.navigation.IScope|java.util.LinkedHashMap/3008245022|java.lang.String/2004016611|name|com.polarion.portal.shared.JSUIObject$StringWrapper/3741875860|test${userCounter}|id|newPassword|newPassword2|globalRoles|com.polarion.portal.shared.JSUIObject$ArrayListWrapper/4183033412|java.util.ArrayList/4159755760|com.polarion.portal.shared.JSRole/3884851580|admin|projectRoles|project_user|time-splitAssignments|com.polarion.alm.projects.web.shared.JSPercentualAssignment/3060827767|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion|1|2|3|4|2|5|6|5|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|7|0|7|8|9|10|11|8|12|10|11|8|13|10|11|8|14|10|11|8|15|16|17|1|18|1|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|19|7|0|1|-5|10|19|8|20|16|17|1|18|1|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|21|7|0|1|-5|10|21|8|22|16|17|1|23|0|-1|-1|0|0|1|1|0|24|0|25|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1865,7 +1875,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1877,7 +1887,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -1917,12 +1927,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|16|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|42F539C3B1D4A1B7B8A723AE0846A406|com.polarion.alm.ui.client.model.UserDataService|loadUsers|com.polarion.portal.shared.navigation.IScope|java.util.ArrayList/4159755760|Z|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion|java.lang.String/2004016611|id|name|email|description|roles|time-splitAssignments|1|2|3|4|4|5|6|6|7|8|0|9|6|0|6|6|10|11|10|12|10|13|10|14|10|15|10|16|1|</stringProp>
+                    <stringProp name="Argument.value">7|0|16|http://${host}:${port}/polarion/gwt/com.polarion.UI/|42F539C3B1D4A1B7B8A723AE0846A406|com.polarion.alm.ui.client.model.UserDataService|loadUsers|com.polarion.portal.shared.navigation.IScope|java.util.ArrayList/4159755760|Z|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion|java.lang.String/2004016611|id|name|email|description|roles|time-splitAssignments|1|2|3|4|4|5|6|6|7|8|0|9|6|0|6|6|10|11|10|12|10|13|10|14|10|15|10|16|1|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1942,7 +1952,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1954,7 +1964,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -1994,12 +2004,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|9|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|saveUICustomizationData|java.util.LinkedHashMap/3008245022|java.lang.String/2004016611|lastUrl|com.polarion.alm.ui.shared.customization.CustomizationValueString/1062760615|/project/MyPolarion/administration/user_management/users|1|2|3|4|1|5|5|0|1|6|7|8|9|</stringProp>
+                    <stringProp name="Argument.value">7|0|9|http://${host}:${port}/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|saveUICustomizationData|java.util.LinkedHashMap/3008245022|java.lang.String/2004016611|lastUrl|com.polarion.alm.ui.shared.customization.CustomizationValueString/1062760615|/project/MyPolarion/administration/user_management/users|1|2|3|4|1|5|5|0|1|6|7|8|9|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2019,7 +2029,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2031,7 +2041,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -2077,12 +2087,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|9|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|requestPortalSite|com.polarion.portal.shared.navigation.PortalSiteContext/4206597130|java.lang.String/2004016611|projects|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion|1|2|3|4|3|5|6|6|5|0|0|7|0|8|0|9|0|0|0|</stringProp>
+                    <stringProp name="Argument.value">7|0|9|http://${host}:${port}/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|requestPortalSite|com.polarion.portal.shared.navigation.PortalSiteContext/4206597130|java.lang.String/2004016611|projects|com.polarion.portal.internal.shared.navigation.ProjectScope/2890252629|MyPolarion|1|2|3|4|3|5|6|6|5|0|0|7|0|8|0|9|0|0|0|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2102,7 +2112,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2114,7 +2124,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -2154,12 +2164,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|6|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|getProjectShortcuts|java.lang.String/2004016611|MyPolarion|1|2|3|4|1|5|6|</stringProp>
+                    <stringProp name="Argument.value">7|0|6|http://${host}:${port}/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|getProjectShortcuts|java.lang.String/2004016611|MyPolarion|1|2|3|4|1|5|6|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2179,7 +2189,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2191,7 +2201,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -2231,12 +2241,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|4|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|getRecentlyVisitedAndFavourites|1|2|3|4|0|</stringProp>
+                    <stringProp name="Argument.value">7|0|4|http://${host}:${port}/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|getRecentlyVisitedAndFavourites|1|2|3|4|0|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2256,7 +2266,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2268,7 +2278,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -2306,7 +2316,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2326,7 +2336,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/759499CA4D3E33C95F1190B98B147E89.cache.html</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/759499CA4D3E33C95F1190B98B147E89.cache.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2354,12 +2364,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|9|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|saveUICustomizationData|java.util.LinkedHashMap/3008245022|java.lang.String/2004016611|lastUrl|com.polarion.alm.ui.shared.customization.CustomizationValueString/1062760615|/project/MyPolarion/home|1|2|3|4|1|5|5|0|1|6|7|8|9|</stringProp>
+                    <stringProp name="Argument.value">7|0|9|http://${host}:${port}/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|saveUICustomizationData|java.util.LinkedHashMap/3008245022|java.lang.String/2004016611|lastUrl|com.polarion.alm.ui.shared.customization.CustomizationValueString/1062760615|/project/MyPolarion/home|1|2|3|4|1|5|5|0|1|6|7|8|9|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2379,7 +2389,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2391,7 +2401,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -2431,12 +2441,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|4|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.WIKI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|getInitData|1|2|3|4|0|</stringProp>
+                    <stringProp name="Argument.value">7|0|4|http://${host}:${port}/polarion/gwt/com.polarion.WIKI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|getInitData|1|2|3|4|0|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2456,7 +2466,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/wiki/bin/view/project/MyPolarion/page/Home</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/wiki/bin/view/project/MyPolarion/page/Home</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2468,7 +2478,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.WIKI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.WIKI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -2506,7 +2516,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2527,7 +2537,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/759499CA4D3E33C95F1190B98B147E89.cache.html</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/759499CA4D3E33C95F1190B98B147E89.cache.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2561,7 +2571,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2582,7 +2592,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/759499CA4D3E33C95F1190B98B147E89.cache.html</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/759499CA4D3E33C95F1190B98B147E89.cache.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2610,12 +2620,12 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">7|0|7|http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|saveUICustomizationData|java.util.LinkedHashMap/3008245022|java.lang.String/2004016611|externalServersCredentials|1|2|3|4|1|5|5|0|1|6|7|0|</stringProp>
+                    <stringProp name="Argument.value">7|0|7|http://${host}:${port}/polarion/gwt/com.polarion.UI/|23C26BC2836F2A795325D6E9B8DA4716|com.polarion.alm.ui.client.navigation.PortalDataService|saveUICustomizationData|java.util.LinkedHashMap/3008245022|java.lang.String/2004016611|externalServersCredentials|1|2|3|4|1|5|5|0|1|6|7|0|</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2635,7 +2645,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2647,7 +2657,7 @@
                   </elementProp>
                   <elementProp name="X-GWT-Module-Base" elementType="Header">
                     <stringProp name="Header.name">X-GWT-Module-Base</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/gwt/com.polarion.UI/</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/gwt/com.polarion.UI/</stringProp>
                   </elementProp>
                   <elementProp name="Pragma" elementType="Header">
                     <stringProp name="Header.name">Pragma</stringProp>
@@ -2685,7 +2695,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">qa-debian7.labs.polarion.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${host}:${port}</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2705,7 +2715,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://qa-debian7.labs.polarion.com/polarion/?logout=true</stringProp>
+                    <stringProp name="Header.value">http://${host}:${port}/polarion/?logout=true</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>

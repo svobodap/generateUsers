@@ -21,7 +21,7 @@
           </elementProp>
           <elementProp name="hostName" elementType="Argument">
             <stringProp name="Argument.name">hostName</stringProp>
-            <stringProp name="Argument.value">qa-debian7.labs.polarion.com</stringProp>
+            <stringProp name="Argument.value">svn_storage.localdomain</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="port" elementType="Argument">
